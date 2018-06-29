@@ -7,7 +7,24 @@
 
 ## 怎么使用？
 
-- 常见功能aop，可见
+- 常见功能aop，可见[https://github.com/Nepxion/Matrix](https://github.com/Nepxion/Matrix)
+- AbstractBeanPostProcessor是Bean后置增强，抽象出来了，可以对加了注解的Bean功能进行增强
+
+比如以下案例，在Referentity变量加上注解@Reference，就可以将@Reference的一些信息设置到referentity变量中。
+有点类似于Dubbo的 @Reference注解的功能。更多细节请查看examples案例。
+
+```$xslt
+@Service
+public class FieldPostProcessorService {
+
+    @Reference(name = "forezp", url = "https://github.com/forezp")
+    Referentity referentity;
+
+    public String test() {
+        return referentity.getName() + "==" + referentity.getUrl();
+    }
+}
+```
 
 
 ## 联系我
