@@ -196,9 +196,9 @@
     </licenses>
     <scm>
         <tag>v${project.version}</tag>
-        <url>git@github.com:forezp/BootNettyRpc.git</url>
-        <connection>scm:git@github.com:forezp/BootNettyRpc.git</connection>
-        <developerConnection>scm:git:git@github.com:forezp/BootNettyRpc.git</developerConnection>
+        <url>git@github.com:forezp/scrorpio.git</url>
+        <connection>scm:git@github.com:forezp/scrorpio.git</connection>
+        <developerConnection>scm:git:git@github.com:forezp/scrorpio.git</developerConnection>
     </scm>
     <developers>
         <developer>
