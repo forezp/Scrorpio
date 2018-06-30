@@ -7,6 +7,19 @@
 
 ## 怎么使用？
 
+在pom文件引用：
+
+```$xslt
+<!-- https://mvnrepository.com/artifact/io.github.forezp/scrorpio -->
+<dependency>
+    <groupId>io.github.forezp</groupId>
+    <artifactId>scrorpio</artifactId>
+    <version>1.0.0</version>
+</dependency>
+
+
+```
+
 - 常见功能aop，可见[https://github.com/Nepxion/Matrix](https://github.com/Nepxion/Matrix)
 - AbstractBeanPostProcessor是Bean后置增强，抽象出来了，可以对加了注解的Bean功能进行增强
 
