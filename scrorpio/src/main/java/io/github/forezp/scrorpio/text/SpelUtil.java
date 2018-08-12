@@ -1,4 +1,4 @@
-package io.github.forezp.scrorpio.util;
+package io.github.forezp.scrorpio.text;
 
 
 import org.springframework.core.LocalVariableTableParameterNameDiscoverer;

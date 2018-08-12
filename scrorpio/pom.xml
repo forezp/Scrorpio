@@ -5,7 +5,7 @@
 
     <groupId>io.github.forezp</groupId>
     <artifactId>scrorpio</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>scrorpio</name>
@@ -15,8 +15,11 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <encoding>UTF-8</encoding>
         <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <guava.version>20.0</guava.version>
         <slf4j.version>1.7.25</slf4j.version>
@@ -25,6 +28,9 @@
         <commons.io.version>2.5</commons.io.version>
         <spring.version>4.3.14.RELEASE</spring.version>
         <matrix.aop.version>1.0.15</matrix.aop.version>
+        <hibernate.validator.veseion>5.3.4.Final</hibernate.validator.veseion>
+        <tomcat.embed.core.version>RELEASE</tomcat.embed.core.version>
+        <spring.web.version>4.3.11.RELEASE</spring.web.version>
     </properties>
 
     <dependencies>
@@ -62,6 +68,22 @@
             <artifactId>matrix-aop</artifactId>
         </dependency>
 
+        <!-- hibernate-validator -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+        </dependency>
+
+        <!-- servlet-->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
 
     </dependencies>
 
@@ -113,6 +135,23 @@
                 <version>${matrix.aop.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate.validator.veseion}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.tomcat.embed</groupId>
+                <artifactId>tomcat-embed-core</artifactId>
+                <version>${tomcat.embed.core.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>4.3.11.RELEASE</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

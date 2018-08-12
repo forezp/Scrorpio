@@ -32,33 +32,12 @@ public abstract class AbstractBeanPostProcessor implements BeanPostProcessor {
 
     public abstract  Class<? extends Annotation> getAnnoatation();
 
-    /**
-     * 处理类上的注解
-     *
-     * @param target
-     * @param annotation
-     * @return
-     */
+
     public abstract Object postProcessClz(Object target, Annotation annotation);
 
-    /**
-     * 处理方法上的注解
-     *
-     * @param target
-     * @param method
-     * @param annotation
-     * @return
-     */
+
     public abstract Object postProcessMethod(Object target, Method method, Annotation annotation);
 
-    /**
-     * 处理作用域上的注解
-     *
-     * @param target
-     * @param field
-     * @param annotation
-     * @return
-     */
     public abstract Object postProcessField(Object target, Field field, Annotation annotation);
 
 
